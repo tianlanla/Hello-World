@@ -244,12 +244,19 @@
       <artifactId>jedis</artifactId>
       <version>2.9.0</version>
     </dependency>
+
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.9.0</version>
+    </dependency>
   </dependencies>
 
 
   <build>
     <finalName>mmall</finalName>
     <plugins>
+      <!--生成pojo，也就是数据库中数据对应的对象-->
       <plugin>
         <groupId>org.mybatis.generator</groupId>
         <artifactId>mybatis-generator-maven-plugin</artifactId>
